@@ -2,7 +2,7 @@ package services;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import protocol.FemaleGameteSource;
+import protocol.gamete.FemaleGameteSource;
 
 import java.util.HashMap;
 

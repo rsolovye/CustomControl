@@ -43,17 +43,17 @@ public class LabProtocolMainController extends ControlledScreen {
 
         labProtocolMainBox.getChildren().add(PROTOCOL_HEADER);
         labProtocolMainBox.getChildren().add(GAMETE_SOURCES);
-        HBox puncture_pgd_box = new HBox();
-        puncture_pgd_box.getChildren().addAll(FOLLICLE_PUNCTURE, PGD_INFO);
-        labProtocolMainBox.getChildren().add(puncture_pgd_box);
-
-        HBox fertilization_precultivation = new HBox();
-        fertilization_precultivation.getChildren().addAll(FERTILIZATION, PRECULTIVATION);
-        labProtocolMainBox.getChildren().add(fertilization_precultivation);
-
-        labProtocolMainBox.getChildren().add(CHECK_POINTS);
-        labProtocolMainBox.getChildren().add(SPERMIOGRAM);
-        labProtocolMainBox.getChildren().add(MEDIA_FOOTER);
+//        HBox puncture_pgd_box = new HBox();
+//        puncture_pgd_box.getChildren().addAll(FOLLICLE_PUNCTURE, PGD_INFO);
+//        labProtocolMainBox.getChildren().add(puncture_pgd_box);
+//
+//        HBox fertilization_precultivation = new HBox();
+//        fertilization_precultivation.getChildren().addAll(FERTILIZATION, PRECULTIVATION);
+//        labProtocolMainBox.getChildren().add(fertilization_precultivation);
+//
+//        labProtocolMainBox.getChildren().add(CHECK_POINTS);
+//        labProtocolMainBox.getChildren().add(SPERMIOGRAM);
+//        labProtocolMainBox.getChildren().add(MEDIA_FOOTER);
 
     }
 
