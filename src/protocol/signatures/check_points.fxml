@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="checkPointsBox" type="javafx.scene.layout.VBox" maxHeight="-Infinity"  maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="105.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="146.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="143.0" text="Проверка оплодот.">
+                     <font>
+                        <Font name="Serif Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="146.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="143.0" text="День 3 - смена среды">
+                     <font>
+                        <Font name="Serif Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="146.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="143.0" text="Криоконсервация">
+                     <font>
+                        <Font name="Serif Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="146.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="143.0" text="Утилизация">
+                     <font>
+                        <Font name="Serif Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="mediaFooterBox" type="javafx.scene.layout.VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="98.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="137.0" text="Особенности">
+               <font>
+                  <Font name="Serif Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="26.0" prefWidth="550.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets right="10.0" top="5.0" />
+         </padding></HBox>
+      <HBox prefHeight="49.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="39.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="103.0" text="Cleavage" />
+                  <TextField />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="103.0" text="Blastocyst" />
+                  <TextField />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="103.0" text="SPS" />
+                  <TextField />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="103.0" text="Hepes" />
+                  <TextField />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="103.0" text="Ovoil" />
+                  <TextField />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="144.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="134.0" text="Инкубатор" />
+                  <ComboBox prefWidth="150.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<fx:root fx:id="protocolHeaderBox" prefHeight="204.0" prefWidth="703.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="100.0" prefWidth="554.0">
+                    <children>
+                        <HBox prefHeight="46.0" prefWidth="536.0">
+                            <children>
+                                <VBox prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="113.0" text="Дата пункции" textAlignment="CENTER" wrapText="true">
+                                            <font>
+                                                <Font name="Serif Bold" size="13.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="punctureDate" alignment="CENTER" text="22.02.2017">
+                                 <font>
+                                    <Font name="Serif Regular" size="13.0" />
+                                 </font></TextField>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </VBox>
+                                <VBox layoutX="15.0" layoutY="10.0" prefHeight="41.0" prefWidth="58.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="42.0" text="Время" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                            <VBox.margin>
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                    <font>
+                                       <Font name="Serif Bold" size="13.0" />
+                                    </font>
+                                        </Label>
+                                        <TextField fx:id="punctureTime" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="51.0" text="11:30">
+                                            <VBox.margin>
+                                                <Insets left="6.0" right="6.0" />
+                                            </VBox.margin>
+                                 <font>
+                                    <Font name="Serif Regular" size="13.0" />
+                                 </font>
+                                        </TextField>
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="108.0" layoutY="10.0" prefHeight="41.0" prefWidth="133.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="130.0" text="Номер карты" textAlignment="CENTER" wrapText="true">
+                                            <font>
+                                                <Font name="Serif Bold" size="13.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </Label>
+                                        <TextField  fx:id="vrt_number" alignment="CENTER" prefHeight="25.0" prefWidth="126.0" text="C0123/2017/123456">
+                                            <opaqueInsets>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </opaqueInsets>
+                                 <font>
+                                    <Font name="Serif Regular" size="13.0" />
+                                 </font>
+                                        </TextField>
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="115.0" layoutY="10.0" prefHeight="41.0" prefWidth="100.0">
+                                    <children>
+                                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="98.0" text="№ протокола" textAlignment="CENTER" wrapText="true">
+                                            <font>
+                                                <Font name="Serif Bold" size="13.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="ivf_attempt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0" text="11:30">
+                                            <VBox.margin>
+                                                <Insets left="25.0" right="6.0" />
+                                            </VBox.margin>
+                                 <font>
+                                    <Font name="Serif Regular" size="13.0" />
+                                 </font>
+                                        </TextField>
+                                    </children>
+                                </VBox>
+                              <VBox prefHeight="46.0" prefWidth="142.0">
+                                  <children>
+                                      <Label alignment="CENTER" prefHeight="15.0" prefWidth="146.0" text="Доктор" textAlignment="CENTER" wrapText="true">
+                                          <font>
+                                              <Font name="Serif Bold" size="13.0" />
+                                          </font>
+                                          <VBox.margin>
+                                              <Insets />
+                                          </VBox.margin>
+                                      </Label>
+                              <CheckComboBox fx:id="punctureDoctorCheckComboBox" prefHeight="26.0" prefWidth="164.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </CheckComboBox>
+      
+                                  </children>
+                              </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Примечания">
+                           <font>
+                              <Font name="Serif Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                              <TextField id="punctureDate" fx:id="header_notes" prefHeight="25.0" prefWidth="119.0" text="СПБ 2016 ГепС">
+                                  <opaqueInsets>
+                                      <Insets />
+                                  </opaqueInsets>
+                                  <VBox.margin>
+                                      <Insets left="5.0" right="14.0" />
+                                  </VBox.margin>
+                              </TextField>
+                     </children>
+                  </VBox>
+                    </children>
+                </VBox>
+                  <VBox prefHeight="100.0" prefWidth="140.0">
+                      <children>
+                          <CheckBox fx:id="isOMS" alignment="CENTER" mnemonicParsing="false" text="ОМС">
+                              <VBox.margin>
+                                  <Insets bottom="5.0" left="15.0" right="10.0" top="10.0" />
+                              </VBox.margin>
+                              <font>
+                                  <Font name="Serif Bold" size="18.0" />
+                              </font>
+                          </CheckBox>
+                  <Label alignment="CENTER" prefHeight="15.0" prefWidth="148.0" text="Диагноз">
+                     <font>
+                        <Font name="Serif Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </Label>
+                     <CheckComboBox fx:id="diagnosisCheckedBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="136.0">
+                        <VBox.margin>
+                           <Insets left="5.0" top="2.0" />
+                        </VBox.margin>
+                     </CheckComboBox>
+                      </children>
+                  </VBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="52.0" prefWidth="654.0">
+            <children>
+                <Label prefHeight="35.0" prefWidth="78.0" text="ФИО Пациентки" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="Serif Bold" size="13.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="femaleName" prefHeight="25.0" prefWidth="348.0" text="Тестовая Иванка Трамповна">
+                    <HBox.margin>
+                        <Insets left="5.0" top="17.0" />
+                    </HBox.margin>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
+                </TextField>
+                <VBox prefHeight="52.0" prefWidth="99.0">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                    <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="122.0" text="Дата Рождения" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font name="Serif Bold" size="13.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="femaleDOB" alignment="CENTER" text="12.12.1960">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox layoutX="441.0" layoutY="10.0" prefHeight="52.0" prefWidth="125.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="130.0" text="Код" wrapText="true">
+                            <font>
+                                <Font name="Serif Bold" size="13.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="femaleCode" alignment="CENTER" text="123456">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="25.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="110.0" prefHeight="52.0" prefWidth="654.0">
+            <children>
+                <Label prefHeight="35.0" prefWidth="76.0" text="ФИО Пациента" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="Serif Bold" size="13.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="5.0" top="7.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="maleName" prefHeight="25.0" prefWidth="348.0" text="Трамп Дональд Валерич">
+                    <HBox.margin>
+                        <Insets left="5.0" top="17.0" />
+                    </HBox.margin>
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
+                </TextField>
+                <VBox prefHeight="52.0" prefWidth="99.0">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                    <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="117.0" text="Дата Рождения" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font name="Serif Bold" size="13.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="maleDOB" alignment="CENTER" text="12.11.1980">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox layoutX="441.0" layoutY="10.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="130.0" text="Код" wrapText="true">
+                            <font>
+                                <Font name="Serif Bold" size="13.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="maleCode" alignment="CENTER" prefHeight="26.0" prefWidth="84.0" text="654321">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="25.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+
+</fx:root>

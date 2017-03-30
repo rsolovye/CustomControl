@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="folliclePunctureBox" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="89.0" prefWidth="361.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="19.0" prefWidth="351.0" text="Пункция фолликулов">
+                     <font>
+                        <Font name="Serif Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="360.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="16.0" prefWidth="117.0" text="Эмбриолог" />
+                              <ListView prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="100.0" prefWidth="127.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="16.0" prefWidth="117.0" text="Медсестра">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <ListView prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="100.0" prefWidth="114.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="16.0" prefWidth="127.0" text="Пунктировано:" />
+                              <TextField alignment="CENTER" prefHeight="43.0" prefWidth="49.0">
+                                 <VBox.margin>
+                                    <Insets left="25.0" right="25.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="400.0" prefWidth="345.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

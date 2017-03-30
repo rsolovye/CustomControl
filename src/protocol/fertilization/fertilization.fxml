@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<fx:root fx:id="FertilizationBox" prefHeight="137.0" prefWidth="345.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+
+
+    <children>
+        <VBox>
+            <children>
+                <HBox prefHeight="25.0" prefWidth="288.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="19.0" prefWidth="154.0" text="Оплодотворение">
+                            <font>
+                                <Font name="Serif Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <CheckComboBox prefHeight="26.0" prefWidth="128.0">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </CheckComboBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="102.0" text="Эмбриолог" />
+                        <ListView prefHeight="200.0" prefWidth="200.0" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="99.0" text="Время" />
+                        <TextField>
+                            <VBox.margin>
+                                <Insets left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField>
+                            <VBox.margin>
+                                <Insets left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox prefHeight="100.0" prefWidth="152.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="161.0" text="Свидетель" />
+                        <ComboBox prefWidth="150.0">
+                            <VBox.margin>
+                                <Insets left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <ComboBox prefWidth="150.0">
+                            <VBox.margin>
+                                <Insets left="10.0" right="10.0" top="10.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets left="5.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <VBox.margin>
+        <Insets top="10.0" />
+    </VBox.margin>
+   <padding>
+      <Insets top="5.0" />
+   </padding>
+</fx:root>

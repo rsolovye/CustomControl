@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<fx:root fx:id="pgdBox" type="javafx.scene.layout.VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="121.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" prefHeight="19.0" prefWidth="135.0" text="ПГД">
+         <font>
+            <Font name="Serif Bold" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox prefWidth="150.0">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </ComboBox>
+      <TextField>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </TextField>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</fx:root>

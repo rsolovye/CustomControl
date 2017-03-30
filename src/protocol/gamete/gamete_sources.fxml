@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="gameteSourcesBox" prefHeight="204.0" prefWidth="703.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+
+   <children>
+      <TableView fx:id="femaleGameteSourcesTableView" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="femaleSourceColumn" prefWidth="121.0" sortable="false" text="Источник женских гамет" />
+          <TableColumn fx:id="femaleTypeColumn" minWidth="0.0" prefWidth="75.0" sortable="false" text="Тип" />
+            <TableColumn fx:id="femaleCryoDateColumn" minWidth="0.0" prefWidth="127.0" sortable="false" text="Дата крио" />
+            <TableColumn fx:id="femaleWitnessColumn" minWidth="0.0" prefWidth="127.0" sortable="false" text="Свидетель" />
+            <TableColumn fx:id="follicleCountColumn" minWidth="0.0" prefWidth="127.0" sortable="false" text="Кол-во фолликулов" />
+        </columns>
+      </TableView>
+      <TableView fx:id="maleGameteSourcesTableView" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="maleSourceColumn" prefWidth="121.0" sortable="false" text="Источник мужских гамет" />
+            <TableColumn fx:id="maleTypeColumn" minWidth="0.0" prefWidth="75.0" sortable="false" text="Тип" />
+            <TableColumn fx:id="maleCryoDateColumn" minWidth="0.0" prefWidth="127.0" sortable="false" text="Дата крио" />
+            <TableColumn fx:id="maleWitnessColumn" minWidth="0.0" prefWidth="127.0" sortable="false" text="Свидетель" />
+            <TableColumn fx:id="biopsyType" minWidth="0.0" prefWidth="127.0" sortable="false" text="Биоптат" />
+         </columns>
+      </TableView>
+   </children>
+</fx:root>
