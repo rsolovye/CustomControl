@@ -27,7 +27,7 @@ public class LabProtocolMainController extends ControlledScreen {
     VBox labProtocolMainBox;
     SessionController sessionController;
 
-    private final ControlledScreen PROTOCOL_HEADER = new ProtocolHeaderController();
+    private final ProtocolHeaderController PROTOCOL_HEADER = new ProtocolHeaderController();
     private final ControlledScreen GAMETE_SOURCES = new GameteSourcesController();
     private final ControlledScreen  FOLLICLE_PUNCTURE = new FolliclePunctureController();
     private final ControlledScreen PRECULTIVATION = new Precultivation();
@@ -58,7 +58,7 @@ public class LabProtocolMainController extends ControlledScreen {
     }
 
     public void saveData(){
-        ((Mappable)PROTOCOL_HEADER).passDataToMapper();
+       PROTOCOL_HEADER.passDataToMapper();
     }
 
 
