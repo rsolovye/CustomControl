@@ -5,12 +5,10 @@ import cust.ProtocolHeader;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.scenicview.ScenicView;
+
 import protocol.header.ProtocolHeaderController;
 
-/**
- * Created by micro on 17.03.2017.
- */
+
 public class App extends Application
 
     {
