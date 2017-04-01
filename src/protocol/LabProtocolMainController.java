@@ -26,7 +26,8 @@ public class LabProtocolMainController extends ControlledScreen {
     SessionController sessionController;
 
     private final ProtocolHeaderController PROTOCOL_HEADER = new ProtocolHeaderController();
-    private final ControlledScreen GAMETE_SOURCES = new GameteSourcesController();
+    //private final ControlledScreen GAMETE_SOURCES = new GameteSourcesController();
+    private final ControlledScreen ALT_GAMETES = new GameteSourcesController();
     private final ControlledScreen  FOLLICLE_PUNCTURE = new FolliclePunctureController();
     private final ControlledScreen PRECULTIVATION = new Precultivation();
     private final ControlledScreen FERTILIZATION = new Fertilization();
@@ -44,7 +45,10 @@ public class LabProtocolMainController extends ControlledScreen {
         labProtocolMainBox.getChildren().add(PROTOCOL_HEADER);
 
 
-        labProtocolMainBox.getChildren().add(GAMETE_SOURCES);
+      ///  labProtocolMainBox.getChildren().add(GAMETE_SOURCES);
+
+    labProtocolMainBox.getChildren().add(ALT_GAMETES);
+
 //        HBox puncture_pgd_box = new HBox();
 //        puncture_pgd_box.getChildren().addAll(FOLLICLE_PUNCTURE, PGD_INFO);
 //        labProtocolMainBox.getChildren().add(puncture_pgd_box);
