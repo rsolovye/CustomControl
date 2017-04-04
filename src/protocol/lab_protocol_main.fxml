@@ -3,5 +3,5 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<fx:root fx:id="labProtocolMainBox" prefHeight="800.0" prefWidth="703.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root fx:id="labProtocolMainBox" prefHeight="-Infinity" prefWidth="-Infinity" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
 </fx:root>

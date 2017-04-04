@@ -18,6 +18,7 @@ public class LogInController extends ControlledScreen {
 
     public LogInController(){
         loadFXML("login_view.fxml", this);
+
     }
 
     @FXML protected void submitLogIn(){

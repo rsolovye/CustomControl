@@ -2,6 +2,7 @@ package session;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import services.DataMapper;
 
@@ -11,7 +12,7 @@ import java.util.HashMap;
 /**
  * Created by micro on 19.03.2017.
  */
-public class ControlledScreen extends VBox {
+public class ControlledScreen extends Pane {
     public HashMap<String, String> dataMap = new HashMap<>();
 
     public void loadFXML(String fxmlName, Node pane){
