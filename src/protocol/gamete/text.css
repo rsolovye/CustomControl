@@ -1,0 +1,7 @@
+  .text-field  {
+    -fx-background-color: -fx-focus-color, -fx-text-box-border, -
+     fx-control-inner-background;
+     -fx-border-color: rgb(0, 255, 0);
+    -fx-background-insets: -0.4, 1, 2;
+    -fx-background-radius: 3.4, 2, 2;
+}

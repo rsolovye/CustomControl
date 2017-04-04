@@ -8,6 +8,6 @@ import session.ControlledScreen;
 public class AltGametesController extends ControlledScreen {
 
     public AltGametesController(){
-        loadFXML("gamete_sources2.fxml", this);
+        loadFXML("wip.fxml", this);
     }
 }
