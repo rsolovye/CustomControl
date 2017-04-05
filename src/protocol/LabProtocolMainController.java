@@ -7,11 +7,13 @@ import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
+import jfxtras.scene.control.ListSpinner;
 import net.miginfocom.layout.AC;
 import net.miginfocom.layout.LC;
 
@@ -67,15 +69,22 @@ public class LabProtocolMainController extends ControlledScreen {
 
 
         MigPane mig =  new MigPane("debug, insets 0");
-
         mig.add(new LabeledTextField("Дата пункции", 100), "");
         mig.add(new LabeledTextField("Время", 45));
         mig.add(new LabeledTextField("Номер карты", 133));
-        mig.add(new LabeledTextField("№ Протокола", 45), "wrap");
-        mig.add(new LabeledTextField("Дата пункции", 400), "spanx 4, pushx");
+        mig.add(new LabeledTextField("№", 45 ));
+
+        ListSpinner<String> m = new ListSpinner<> ("Гвасалия Р.Г.", "Шарфи Ю.Н.", "Геркулов Д.А.", "Жарова М.В.");
+
+
+            mig.add(new CheckBox("OMC"));
+
+            mig.add(new LabeledTextField("Дата пункции", 400), "spanx 3, pushx");
 
 
 labProtocolMainBox.getChildren().add(mig);
+
+
 
 //        HBox puncture_pgd_box = new HBox();
 //        puncture_pgd_box.getChildren().addAll(FOLLICLE_PUNCTURE, PGD_INFO);
