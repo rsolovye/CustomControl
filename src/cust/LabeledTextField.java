@@ -18,7 +18,7 @@ import org.tbee.javafx.scene.layout.MigPane;
  */
 public class LabeledTextField extends MigPane {
     TextField textField = new TextField();
-
+    Label label = new Label();
         public LabeledTextField(String labelText,  int width){
            MigPane lRoot = new MigPane("insets 0", "", "");
 
@@ -53,6 +53,40 @@ label.setMaxHeight(label.getPrefHeight());
             setLayoutConstraints(lc);
         }
 
+
+    public LabeledTextField(String labelText,  String flow){
+        MigPane lRoot = new MigPane("insets 0, " + flow, "", "");
+
+        Label label = new Label(labelText);
+        //   label.setAlignment(Pos.CENTER);
+        label.setStyle("-fx-font-size: 11;\n" +
+                "-fx-font-family: \"Century Gothic\";\n" +
+                "-fx-font-weight: Bold;\n" +
+                "-fx-text-fill: rgb(0, 0, 5);" +
+                "");
+
+        //   label.setAlignment(Pos.BASELINE_CENTER);
+
+        //StackPane labeledPane = new StackPane();
+
+        //labeledPane.getChildren().add(label);
+        label.setPrefHeight(14);
+        label.setMaxHeight(label.getPrefHeight());
+
+        textField.setAlignment(Pos.TOP_CENTER);
+
+        lRoot.add(label, "align 50% 100%");
+        lRoot.add(textField, "h 24!, align 50% 0%");
+
+///            setPrefWidth((label.getWidth() > width)? label.getWidth() : width);
+        //          setMaxWidth((label.getWidth() > width)? label.getWidth() : width);
+
+        getChildren().addAll(lRoot);
+        LC lc = new LC();
+        lc.pack();
+
+        setLayoutConstraints(lc);
+    }
         public String getText(){
             return textField.getText();
         }

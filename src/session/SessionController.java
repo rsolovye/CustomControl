@@ -1,6 +1,9 @@
 package session;
 
+import impl.org.controlsfx.skin.BreadCrumbBarSkin;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 
@@ -9,6 +12,9 @@ import javafx.scene.Node;
 
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import org.tbee.javafx.scene.layout.MigPane;
 import protocol.LabProtocolMainController;
 
 
@@ -31,7 +37,19 @@ public class SessionController extends BorderPane{
 public SessionController () {
     loadFXML("session_view.fxml", this);
     mapScreens();
-    sessionBorderPane.setCenter(new LabProtocolMainController(this));
+    LabProtocolMainController labProtocolMainController = new LabProtocolMainController(this);
+
+
+
+
+    MigPane stageClosePane = new MigPane("align 100% 0%");
+    Button xCloseButton = new BreadCrumbBarSkin.BreadCrumbButton("x");
+    stageClosePane.add(xCloseButton, "align 100% 0%");
+
+    sessionBorderPane.setTop(stageClosePane);
+    sessionBorderPane.setCenter(labProtocolMainController);
+    sessionBorderPane.setLeft(new Rectangle(10, 400,Color.rgb(100, 100, 100, 0.0)));
+    xCloseButton.setOnAction(event -> Platform.exit());
   //  sessionBorderPane.setCenter();
   //  ((LogInController) views.get("LOGIN")).setSessionController(this);
 

@@ -27,9 +27,9 @@ import javafx.stage.StageStyle;
  * Created by micro on 04.04.2017.
  */
 public class LogApp extends Application{
-    private final static String MY_PASS = "emb1";
+    private final static String MY_PASS = "1";
     private final static BooleanProperty GRANTED_ACCESS = new SimpleBooleanProperty(false);
-    private final static int MAX_ATTEMPTS = 3;
+    private final static int MAX_ATTEMPTS = 1;
     private final IntegerProperty ATTEMPTS = new SimpleIntegerProperty(0);
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -139,12 +139,28 @@ public class LogApp extends Application{
 
                 if (granted) {
                     deniedIcon.setVisible(false);
-                    primaryStage.setScene(new Scene(new SessionController()));
+                    SessionController sessionController = new SessionController();
+                    Group sGroup = new Group();
+                    Rectangle sessionControllerBackGround = new Rectangle(750, 400, Color.rgb(255, 255, 255, 0.6));
+                    sessionControllerBackGround.setX(0);
+                    sessionControllerBackGround.setY(0);
+                    sessionControllerBackGround.setArcHeight(15);
+                    sessionControllerBackGround.setArcWidth(15);
+                  //  background.setFill(Color.rgb(0, 0, 0, .55));
+                    sessionControllerBackGround.setStrokeWidth(1.5);
+                    sessionControllerBackGround.setStroke(Color.rgb(255, 255, 255, 0.8));
+
+                    sGroup.getChildren().add(sessionControllerBackGround);
+                    sGroup.getChildren().add(sessionController);
+                   // primaryStage.setScene(new Scene(sessionController, Color.rgb(0, 0, 0, 0.0)));
+                    primaryStage.setScene(new Scene(sGroup, Color.rgb(0,0 ,0 , 0)));
+
                     primaryStage.setTitle("Session Controller");
-                    primaryStage.setWidth(1000);
-                    primaryStage.setHeight(950);
+                    primaryStage.setWidth(900 + 100);
+                    primaryStage.setHeight(700);
 primaryStage.setX(100);
-                }
+primaryStage.setY(50);
+primaryStage.getScene().getStylesheets();                                                                                                                                                                                                                                     }
             });
 // listener on number of attempts
             ATTEMPTS.addListener((obs, ov, nv) -> {

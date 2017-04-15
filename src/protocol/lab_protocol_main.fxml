@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
 
 
-<fx:root fx:id="labProtocolMainBox" prefHeight="-Infinity" prefWidth="-Infinity" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root fx:id="labProtocolMainBox" prefHeight="-Infinity" prefWidth="-Infinity" stylesheets="@labels.css" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
 </fx:root>

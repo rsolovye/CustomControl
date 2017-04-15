@@ -1,0 +1,13 @@
+.label {
+                -fx-font-size: 11;
+                -fx-font-family: "SanSerif";
+                -fx-font-weight: Bold;
+                -fx-text-fill: rgb(0, 0, 5);
+               }
+
+
+.textfield {
+                -fx-font-size: 11;
+                -fx-font-family: "SanSerif";
+                -fx-text-fill: rgb(0, 0, 5);
+               }
