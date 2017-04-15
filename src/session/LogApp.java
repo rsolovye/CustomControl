@@ -22,6 +22,7 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import resources.EmbryColors;
 
 /**
  * Created by micro on 04.04.2017.
@@ -141,14 +142,14 @@ public class LogApp extends Application{
                     deniedIcon.setVisible(false);
                     SessionController sessionController = new SessionController();
                     Group sGroup = new Group();
-                    Rectangle sessionControllerBackGround = new Rectangle(750, 400, Color.rgb(255, 255, 255, 0.6));
+                    Rectangle sessionControllerBackGround = new Rectangle(750, 600, EmbryColors.sessionBackColor.deriveColor(1,1,1, 0.9));//.rgb(255, 255, 255, 0.6));
                     sessionControllerBackGround.setX(0);
                     sessionControllerBackGround.setY(0);
                     sessionControllerBackGround.setArcHeight(15);
                     sessionControllerBackGround.setArcWidth(15);
                   //  background.setFill(Color.rgb(0, 0, 0, .55));
                     sessionControllerBackGround.setStrokeWidth(1.5);
-                    sessionControllerBackGround.setStroke(Color.rgb(255, 255, 255, 0.8));
+                    sessionControllerBackGround.setStroke(Color.rgb(0, 0, 0, 0.8));
 
                     sGroup.getChildren().add(sessionControllerBackGround);
                     sGroup.getChildren().add(sessionController);

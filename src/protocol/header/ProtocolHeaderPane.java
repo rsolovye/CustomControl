@@ -1,6 +1,7 @@
 package protocol.header;
 
 import javafx.collections.ListChangeListener;
+import javafx.geometry.Insets;
 import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
@@ -8,6 +9,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import org.controlsfx.control.CheckComboBox;
 import org.tbee.javafx.scene.layout.MigPane;
+import resources.EmbryColors;
 
 import java.time.LocalDate;
 import java.util.Locale;
@@ -16,7 +18,7 @@ import java.util.Stack;
 public class ProtocolHeaderPane extends MigPane {
 
     public ProtocolHeaderPane(){
-        super("insets 5 5 0 0");
+        super("insets 15 10 10 10");
 
         Locale.setDefault(new Locale("RU"));
 
@@ -26,7 +28,7 @@ public class ProtocolHeaderPane extends MigPane {
         DatePicker punctureDatePicker = new DatePicker();
         punctureDatePicker.setPrefWidth(120);
         punctureDatePicker.setValue (LocalDate.now().plusDays(1));
-        punctureDatePicker.setPrefHeight(20);
+      //  punctureDatePicker.setPrefHeight(20);
         add(punctureDatePicker, "");
 
         addToMig(this, "Время", 55);
@@ -80,7 +82,7 @@ public class ProtocolHeaderPane extends MigPane {
 
     public void addToMig(MigPane migPane, String lable, Control control, int textWidth){
         migPane.add(new Label(lable), "split 2, flowy, align 50% 0%");
-        migPane.add(control, "w " + textWidth + "!, align 50% 100%");
+        migPane.add(control, "w " + textWidth + "!, align 50% 0%");
     }
 
 
@@ -100,15 +102,15 @@ public class ProtocolHeaderPane extends MigPane {
 
     public StackPane getStack(){
         StackPane stackPane = new StackPane();
-
-        Rectangle background = new Rectangle(725, 170, Color.rgb(100, 100, 100, 0.6));
+        stackPane.setOpaqueInsets(new Insets(10,10 ,0,0));
+        Rectangle background = new Rectangle(725, 190, EmbryColors.focusedPane.deriveColor(1,1,1,0.6));//.rgb(100, 100, 100, 0.6));
         background.setX(0);
         background.setY(0);
         background.setArcHeight(15);
         background.setArcWidth(15);
         //  background.setFill(Color.rgb(0, 0, 0, .55));
         background.setStrokeWidth(1.5);
-        background.setStroke(Color.rgb(0, 0, 0, 0.8));
+        background.setStroke(Color.rgb(0,0,0));//Color.rgb(0, 0, 0, 0.8));
         stackPane.getChildren().add(background);
         stackPane.getChildren().add(this);
         return stackPane;
